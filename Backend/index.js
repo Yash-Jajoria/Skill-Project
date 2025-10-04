@@ -10,7 +10,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 
-app.use("/api/auth",authRouter)
+//app.use("/api/auth",authRouter)
 
 app.get("/",(req,res)=>{
     res.send("Hello from server")
@@ -18,5 +18,6 @@ app.get("/",(req,res)=>{
 
 app.listen(port , ()=>{
     console.log("Server Started")
+    console.log(process.env.MONGODB_URL)
     connectDb()
 })
