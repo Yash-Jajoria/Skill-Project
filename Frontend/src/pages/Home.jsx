@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Home() {
   return (
-    <div className='text-2xl text-[red]'>
-        Home
-        </div>
-  )
+    <div className="text-2xl text-[red]">
+      Home Page
+    </div>
+  );
 }
 
-export default Home
+export default Home;

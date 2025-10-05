@@ -14,18 +14,15 @@ const userSchema = new mongoose.Schema({
         unique:true
     },
     password:{
-        type:String
-    },
-    role:{
         type:String,
-        enum:["learner"],
-        required:true
+        required: true
     },
+    
     photoUrl:{
         type:String,
         default:""
     },
-    enrollCourses:[{
+    enrolledCourses:[{
         type:mongoose.Schema.Types.ObjectId,
         ref: "Course"
     }]
