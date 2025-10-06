@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 import connectDb from './config/connectDB.js'
 import cookieParser from 'cookie-parser'
 import authRouter from './route/authRoute.js'
-dotenv.config()
+dotenv.config({path :'D:/web/Skill-Project/Backend/.env'})
 import cors from "cors"
 
 const port = process.env.PORT

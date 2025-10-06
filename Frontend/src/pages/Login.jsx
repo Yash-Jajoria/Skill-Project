@@ -67,7 +67,7 @@ function Login() {
                 </div>
     
                 <button className='w-[80%] h-[40px] bg-[gold] text-black flex items-center justify-center rounded-[5px] cursor-pointer'disabled={loading} onClick={handleLogin} >{loading ? <ClipLoader size={30} color='white' />:"Login"}</button>
-                <span className='text-[13px] cursor-pointer text-[slateGrey]'>Forgot Password?</span>
+                <span className='text-[13px] cursor-pointer text-[slateGrey]' onClick={()=>navigate("/forget")}>Forgot Password?</span>
                     <div className='w-[80%] flex items-center justify-center'>
                     <div className='w-[50%] text-[slateGrey] text-[15px] flex items-center justify-center'> Or Continue</div>
                   </div>
